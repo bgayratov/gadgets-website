@@ -3,6 +3,24 @@
 
  @import '../mixins', '../normalize', '../variables';
 
+ html {
+    @media screen and(max-width: 1140px){
+        font-size: 14px;  
+    }
+
+    @media screen and(max-width: 960px){
+        font-size: 12px;  
+    }
+
+    @media screen and(max-width: 560px){
+        font-size: 10px;  
+    }
+
+    @media screen and(max-width: 360px){
+        font-size: 8px;  
+    }
+ }
+
  .wrapper {
      min-width: 100vw;
      position: relative;
@@ -27,11 +45,10 @@
 
      &-nav {
          font-weight: 400;
-         font-size: 14px;
-         line-height: 17px;
-         /* identical to box height, or 120% */
+         font-size: 0.9rem;
+         line-height: 120%;
          text-transform: uppercase;
-         padding: 31px 0 33px 0;
+         padding: 1.93rem 0 2.06rem 0;
      }
 
      &-navbar {
@@ -49,20 +66,20 @@
              background-color: transparent;
 
              &:not(:last-child) {
-                 margin-right: 27px;
+                 margin-right: 1.69rem;
              }
          }
      }
 
      &-main {
          height: 100%;
-         margin: 50px 0px;
+         margin: 3.125rem 0px;
 
          &_content {
              background: #DCE5E2;
              border-radius: 32px;
              @include flex(space-between, center);
-             padding: 30px 56px;
+             padding: 1.9rem 3.5rem;
 
              &-left {
                  width: 40%;
@@ -83,30 +100,30 @@
 
          &_title {
              font-weight: 500;
-             font-size: 58px;
+             font-size: 3.625rem;
              line-height: 120%;
-             margin-bottom: 19px;
+             margin-bottom: 1.2rem;
          }
 
          &_text {
              font-family: 'Inter', sans-serif;
              font-style: normal;
              font-weight: 400;
-             font-size: 16px;
-             line-height: 19px;
+             font-size: 1rem;
+             line-height: 1.2rem;
          }
 
          &_btn {
-             padding: 14px 53px;
+             padding: 0.9rem 3.3rem;
              border: 1px solid $black;
              border-radius: 200px;
-             margin-top: 30px;
+             margin-top: 1.9rem;
              background-color: transparent;
 
              font-family: 'Inter';
              font-style: normal;
              font-weight: 400;
-             font-size: 18px;
+             font-size: 1.125rem;
              line-height: 120%;
              color: $black;
          }
@@ -114,7 +131,7 @@
  }
 
  .nav-item:not(:last-child) {
-     margin-right: 33px;
+     margin-right: 2.07rem;
  }
 
  .main {
@@ -122,24 +139,24 @@
 
      &-page1 {
          text-align: center;
-         padding-bottom: 78px;
+         padding-bottom: 4.9rem;
 
          &_info {
              width: 64%;
              font-weight: 400;
              margin: 0 auto;
-             padding: 75px 0 55px 0;
+             padding: 4.7rem 0 3.4rem 0;
              text-align: center;
          }
 
          &_title {
-             font-size: 42px;
+             font-size: 2.625rem;
              line-height: 125%;
              font-weight: 400 !important;
          }
 
          &_text {
-             font-size: 14px;
+             font-size: 0.9rem;
              line-height: 120%;
          }
 
@@ -156,7 +173,7 @@
                  &-box1 {
                      width: 100%;
                      height: 68%;
-                     padding: 40px;
+                     padding: 2.5rem;
                      box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
                      -webkit-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
                      -moz-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
@@ -170,9 +187,9 @@
                  &-box2 {
                      width: 100%;
                      height: 250px;
-                     padding: 40px;
+                     padding: 2.5rem;
                      @include flex(space-between, center);
-                     margin-top: 40px;
+                     margin-top: 2.5rem;
                      box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
                      -webkit-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
                      -moz-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
@@ -193,13 +210,13 @@
                  &-box3 {
                      width: 48%;
                      height: 100%;
-                     padding: 200px 20px;
+                     padding: 12.5rem 1.25rem;
                      box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
                      -webkit-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
                      -moz-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
 
                      img {
-                         margin-bottom: 42px;
+                         margin-bottom: 2.625rem;
                          width: 100%;
                          height: 50%;
                      }
@@ -208,13 +225,13 @@
                  &-box4 {
                      width: 48%;
                      height: 100%;
-                     padding: 200px 20px;
+                     padding: 12.5rem 1.25rem;
                      box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
                      -webkit-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
                      -moz-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
 
                      img {
-                         margin-top: 42px;
+                         margin-top: 2.625rem;
                          width: 100%;
                          height: 50%;
                      }
@@ -237,14 +254,14 @@
          &_card {
              width: 23%;
              height: 500px;
-             padding: 20px;
+             padding: 1.25rem;
 
              &:not(:last-child) {
-                 margin-right: 16px;
+                 margin-right: 1rem;
              }
 
              img {
-                 margin-bottom: 36px;
+                 margin-bottom: 2.25rem;
                  @extend %transition;
 
                  &:hover {
@@ -254,16 +271,16 @@
 
              &-title {
                  font-weight: 400;
-                 font-size: 22px;
+                 font-size: 1.4rem;
                  line-height: 125%;
-                 margin-bottom: 9px;
+                 margin-bottom: 0.6rem;
              }
 
              &-desc {
                  font-family: 'Inter', sans-serif;
                  font-style: normal;
                  font-weight: 400;
-                 font-size: 14px;
+                 font-size: 0.9rem;
                  line-height: 120%;
              }
 
@@ -271,19 +288,19 @@
                  font-family: 'Inter';
                  font-style: normal;
                  font-weight: 400;
-                 font-size: 18px;
-                 line-height: 22px;
-                 margin-top: 25px;
+                 font-size: 1.125rem;
+                 line-height: 120%;
+                 margin-top: 1.6rem;
              }
          }
      }
 
      &-page3 {
          position: relative;
-         padding-bottom: 75px;
+         padding-bottom: 4.7rem;
 
          &-info {
-             margin-bottom: 44px;
+             margin-bottom: 2.75rem;
          }
 
          &_boxes {
@@ -293,12 +310,12 @@
 
          &_box {
              width: 30%;
-             padding: 20px;
+             padding: 1.25rem;
              text-align: center;
              background-color: $lightgray;
 
              &:not(:last-child) {
-                 margin-right: 28px;
+                 margin-right: 1.75rem;
              }
 
              img {
@@ -313,11 +330,11 @@
 
      &-page4 {
          position: relative;
-         padding-bottom: 73px;
+         padding-bottom: 4.6rem;
 
          &_content {
              @include flex(space-between, center);
-             padding-bottom: 73px;
+             padding-bottom: 4.6rem;
          }
 
          &_img {
@@ -329,16 +346,16 @@
              font-family: 'Inter', sans-serif;
              font-style: normal;
              font-weight: 400;
-             font-size: 24px;
+             font-size: 1.5rem;
              line-height: 125%;
-             padding: 0 35px;
+             padding: 0 2.19rem;
          }
 
          &_direct {
              font-family: 'Inter', sans-serif;
              font-style: normal;
              font-weight: 500;
-             font-size: 24px;
+             font-size: 1.5rem;
              line-height: 120%;
              text-align: center;
              cursor: pointer;
@@ -349,32 +366,32 @@
          position: relative;
 
          &_info {
-             margin-bottom: 24px;
-             padding: 20px 0 0 0;
+             margin-bottom: 1.5rem;
+             padding: 1.25rem 0 0 0;
          }
 
          &_search {
              width: 55%;
-             height: 60px;
+             height: 3.75rem;
              border: 2px solid $gray;
              border-radius: 50px;
              background-color: $lightgray;
              margin: 0 auto;
              @include flex(unset, center);
-             padding: 18px 20px;
+             padding: 1.125rem 1.25rem;
 
              input {
                  width: 100%;
                  border: 0;
                  outline: 0;
-                 padding-left: 22px;
+                 padding-left: 1.375rem;
                  background-color: $lightgray;
 
 
                  font-family: 'Inter', sans-serif;
                  font-style: normal;
                  font-weight: 400;
-                 font-size: 16px;
+                 font-size: 1rem;
                  line-height: 120%;
                  color: $black  !important;
 
@@ -386,9 +403,9 @@
              display: flex;
              flex-wrap: wrap;
              margin: 0 auto;
-             margin-top: 18px;
+             margin-top: 1.125rem;
              @extend %center;
-             margin-bottom: 68px;
+             margin-bottom: 4.25rem;
 
          }
 
@@ -399,16 +416,16 @@
              border-radius: 200px;
              @extend %center;
              cursor: pointer;
-             padding: 12px 22px;
+             padding: 0.75rem 1.375rem;
 
              font-family: 'Inter', sans-serif;
              font-style: normal;
              font-weight: 400;
-             font-size: 14px;
+             font-size: 0.875rem;
              line-height: 120%;
 
              &:not(:last-child) {
-                 margin: 0 7px 7px 0;
+                 margin: 0 0.45rem 0.45rem 0;
              }
 
              &:hover {
@@ -424,7 +441,7 @@
              background-color: $box-bg-color;
              border-radius: 16px;
              text-align: center;
-             padding-bottom: 47px;
+             padding-bottom: 2.95rem;
 
 
              &-info {
@@ -433,17 +450,17 @@
 
              &-info-plus {
                  padding-bottom: 0;
-                 margin-bottom: 14px;
+                 margin-bottom: 0.875rem;
 
              }
 
              &-sign {
-                 width: 385px;
-                 height: 40px;
+                 width: 50%;
+                 height: 9%;
                  border: 1px solid $black;
                  border-radius: 50px;
                  @extend %center;
-                 margin: 30px auto;
+                 margin: 1.58rem auto;
 
 
                  input {
@@ -452,7 +469,7 @@
                      border-radius: 50px 0 0 50px;
                      border: 0;
                      outline: 0;
-                     padding: 16px 18px;
+                     padding: 1rem 1.125rem;
                      background-color: transparent;
                  }
 
@@ -465,7 +482,7 @@
                      font-family: 'Inter', sans-serif;
                      font-style: normal;
                      font-weight: 400;
-                     font-size: 14px;
+                     font-size: 0.875rem;
                      line-height: 120%;
                      color: $white;
 
@@ -481,8 +498,8 @@
  .footer {
      position: relative;
      background-color: #F8F9FA;
-     margin: 10px 0;
-     padding: 20px 0;
+     margin: 0.625rem 0;
+     padding: 1.25rem 0;
      border-top: 2px solid lightgray;
 
 
@@ -493,12 +510,12 @@
             width: 19%;
 
              img {
-                 margin-bottom: 19px;
+                 margin-bottom: 1.2rem;
              }
 
              &-plus {
                 width: 25%;
-                margin-right: 100px;
+                margin-right: 6.25rem;
              }
          }
 
@@ -506,19 +523,19 @@
              font-family: 'Inter', sans-serif;
              font-style: normal;
              font-weight: 400;
-             font-size: 16px;
+             font-size: 1rem;
              line-height: 130%;
          }
 
          &_title {
-            margin-bottom: 19px;
+            margin-bottom: 1.2rem;
          }
 
          &_link {
              font-family: 'Inter', sans-serif;
              font-style: normal;
              font-weight: 400;
-             font-size: 17px;
+             font-size: 1rem;
              line-height: 200%;
              color: $gray;
 
@@ -532,7 +549,7 @@
 
  .box-title {
      font-weight: 400;
-     font-size: 32px;
+     font-size: 2rem;
      line-height: 120%;
      text-align: right;
      color: $black;
@@ -542,7 +559,7 @@
      font-family: 'Inter', sans-serif;
      font-style: normal;
      font-weight: 400;
-     font-size: 15px;
+     font-size: 1rem;
      line-height: 128%;
      text-align: right;
 
