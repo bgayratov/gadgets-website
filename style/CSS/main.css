@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Readex+Pro:200,300,regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@200&family=Ubuntu:wght@500&display=swap");
-.main-page5_box-sign, .main-page5_ex-search, .main-page5_ex-searchs {
+.main-page5_box-sign, .main-page5_ex-search, .main-page5_ex-searchs, .main-page2_cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +88,7 @@ th, td {
   font-size: 0.9rem;
   line-height: 120%;
   text-transform: uppercase;
-  padding: 1.93rem 0 2.06rem 0;
+  padding: 0.93rem 0 1.06rem 0;
 }
 .header-navbar {
   position: relative;
@@ -111,7 +111,7 @@ th, td {
 }
 .header-main {
   height: 100%;
-  margin: 3.125rem 0px;
+  margin: 8rem 0 4rem 0px;
 }
 .header-main_content {
   background: #DCE5E2;
@@ -161,6 +161,16 @@ th, td {
   font-size: 1.125rem;
   line-height: 120%;
   color: #000000;
+}
+
+.navbar {
+  width: 90%;
+  position: fixed;
+  top: 0;
+  right: 75px;
+  z-index: 10;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DCE5E2;
 }
 
 .nav-item:not(:last-child) {
@@ -268,15 +278,17 @@ th, td {
 }
 .main-page2_cards {
   width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 }
 .main-page2_card {
-  width: 23%;
+  width: 295px;
   height: 500px;
   padding: 1.25rem;
+}
+.main-page2_card:hover {
+  box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -2px 1px 65px 6px rgba(0, 0, 0, 0.15);
 }
 .main-page2_card:not(:last-child) {
   margin-right: 1rem;
@@ -316,19 +328,21 @@ th, td {
   margin-bottom: 2.75rem;
 }
 .main-page3_boxes {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .main-page3_box {
-  width: 30%;
+  width: 375px;
   padding: 1.25rem;
   text-align: center;
   background-color: #F8F9FA;
 }
 .main-page3_box:not(:last-child) {
   margin-right: 1.75rem;
+}
+.main-page3_box img {
+  width: 75%;
 }
 .main-page3_box img:hover {
   transform: scale(1.1);
@@ -342,6 +356,12 @@ th, td {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 4.6rem;
+}
+@media screen and (max-width: 1200px) {
+  .main-page4_content {
+    display: block;
+    width: 100%;
+  }
 }
 .main-page4_img {
   width: 48%;
